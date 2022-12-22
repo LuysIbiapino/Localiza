@@ -18,16 +18,16 @@ class Esportivos extends Carro{
     }
 }
 class Utilitario extends Carro{
-    constructor (modelo, placa, ano, cor, quilometragem, valorDiario, observacoes, QuantidadePassageiros, TamanhoBagageiros, KmLitros){
+    constructor (modelo, placa, ano, cor, quilometragem, valorDiario, observacoes, quantidadePassageiros, tamanhoBagageiros, kmLitros){
         super(modelo, placa, ano, cor, quilometragem, valorDiario, observacoes);
-        this.QuantidadePassageiros = QuantidadePassageiros;
-        this.TamanhoBagageiros =TamanhoBagageiros;
-        this.KmLitros = KmLitros;
+        this.QuantidadePassageiros = quantidadePassageiros;
+        this.TamanhoBagageiros =tamanhoBagageiros;
+        this.KmLitros = kmLitros;
     }
 }
 class Reserva{
-    constructor(CpfCliente, status, codigo, dataInicio, dataFim){
-        this.CpfCliente =CpfCliente;
+    constructor(cpfCliente, status, codigo, dataInicio, dataFim){
+        this.CpfCliente =cpfCliente;
         this.status = status;
         this.codigo = codigo;
         this.dataInicio =dataInicio;
@@ -54,11 +54,11 @@ class Funcionario extends Pessoa {
     }
 }
 class Cliente extends Pessoa{
-    constructor(nome, cpf,email, endereco, telefone,idade,dataNascimento,nuCateriraMotorista, FotoCarteira, anoVencimento){
+    constructor(nome, cpf,email, endereco, telefone,idade,dataNascimento,nuCateriraMotorista, fotoCarteira, anoVencimento){
         super(nome, cpf,email, endereco, telefone,idade)
         this.dataNascimento = dataNascimento;
         this.nuCateriraMotorista = nuCateriraMotorista;
-        this.FotoCarteira =FotoCarteira;
+        this.FotoCarteira =fotoCarteira;
         this.anoVencimento = anoVencimento;
     }
 }
